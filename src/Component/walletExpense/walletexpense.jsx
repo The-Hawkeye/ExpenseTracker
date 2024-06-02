@@ -74,6 +74,7 @@ const WalletExpensesComponent = ({
 
   useEffect(() => {
     handleExpenseListUpdate(expenses);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [expenses]);
 
   //By default add totalBalance as 5000

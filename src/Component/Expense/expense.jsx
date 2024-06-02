@@ -91,20 +91,7 @@ const TableWithPagination = ({
     setCurrExpense(expense);
   };
 
-  const closeModal = () => {
-    setIsModalOpen(false);
-    setCurrExpense({
-      title: "",
-      price: "",
-      category: "",
-      date: "",
-    }); // Reset editing expense
-  };
 
-  const handleEdit = (e) => {
-    e.preventDefault();
-    setIsModalOpen(false);
-  };
 
   const handleDelete = (id) => {
     const updatedExpenses = data.filter((expense) => expense.id !== id);
